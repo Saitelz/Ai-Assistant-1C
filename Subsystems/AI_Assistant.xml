@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://v8.1c.ru/8.1/data/core" xmlns:mdclass="http://v8.1c.ru/8.3/mdclass" xmlns:mdclassExtension="http://v8.1c.ru/8.3/mdclass/extension">
+  <Subsystem uuid="11111111-1111-1111-1111-111111111111">
+    <Properties>
+      <Name>AI_Assistant</Name>
+      <Synonym>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>ИИ-ассистент</v8:content>
+        </v8:item>
+      </Synonym>
+      <Comment>Интеллектуальный помощник для пользователей 1С:ERP</Comment>
+      <IncludeHelpInContents>true</IncludeHelpInContents>
+      <IncludeInCommandInterface>true</IncludeInCommandInterface>
+      <UseOneCommand>true</UseOneCommand>
+      <Explanation/>
+      <Picture/>
+    </Properties>
+    <ChildObjects/>
+  </Subsystem>
+</MetaDataObject> 

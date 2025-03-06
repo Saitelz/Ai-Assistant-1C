@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://v8.1c.ru/8.1/data/core" xmlns:mdclass="http://v8.1c.ru/8.3/mdclass" xmlns:mdclassExtension="http://v8.1c.ru/8.3/mdclass/extension">
+  <CommonModule uuid="22222222-2222-2222-2222-222222222222">
+    <Properties>
+      <Name>AI_AssistantModule</Name>
+      <Synonym>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>ИИ-ассистент</v8:content>
+        </v8:item>
+      </Synonym>
+      <Comment>Модуль для работы с ИИ API</Comment>
+      <Global>false</Global>
+      <ClientManagedApplication>true</ClientManagedApplication>
+      <Server>true</Server>
+      <ExternalConnection>false</ExternalConnection>
+      <ClientOrdinaryApplication>false</ClientOrdinaryApplication>
+      <ServerCall>false</ServerCall>
+      <Privileged>false</Privileged>
+      <ReturnValuesReuse>DontUse</ReturnValuesReuse>
+    </Properties>
+  </CommonModule>
+</MetaDataObject> 

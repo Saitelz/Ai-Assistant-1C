@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://v8.1c.ru/8.1/data/core" xmlns:mdclass="http://v8.1c.ru/8.3/mdclass" xmlns:mdclassExtension="http://v8.1c.ru/8.3/mdclass/extension">
+  <Command uuid="44444444-4444-4444-4444-444444444444">
+    <Properties>
+      <Name>OpenAI_Assistant</Name>
+      <Synonym>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Открыть ИИ-ассистент</v8:content>
+        </v8:item>
+      </Synonym>
+      <Comment>Открывает окно ИИ-ассистента</Comment>
+      <Group>NavigationPanelOrdinary</Group>
+      <CommandParameterType/>
+      <ParameterUseMode>Single</ParameterUseMode>
+      <ModifiesData>false</ModifiesData>
+      <Representation>Auto</Representation>
+    </Properties>
+  </Command>
+</MetaDataObject> 

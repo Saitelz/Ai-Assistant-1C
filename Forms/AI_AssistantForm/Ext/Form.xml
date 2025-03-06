@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:clf="http://v8.1c.ru/8.1/data/ui/colors/colors" xmlns:core="http://v8.1c.ru/8.1/data/core" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+  <AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+    <Autofill>false</Autofill>
+    <ChildItems>
+      <Button name="ФормаНастройки" id="17">
+        <Type>CommandBarButton</Type>
+        <CommandName>Form.Command.ОткрытьНастройки</CommandName>
+        <ExtendedTooltip>
+          <Title>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Настройки ИИ-ассистента</v8:content>
+            </v8:item>
+          </Title>
+          <ExtendedTooltip name="ФормаНастройкиРасширеннаяПодсказка" id="18"/>
+        </ExtendedTooltip>
+        <ToolTip>
+          <v8:item>
+            <v8:lang>ru</v8:lang>
+            <v8:content>Настройки ИИ-ассистента</v8:content>
+          </v8:item>
+        </ToolTip>
+        <CommandSource>Form</CommandSource>
+        <ParameterInfo/>
+      </Button>
+    </ChildItems>
+  </AutoCommandBar>
+  <Events>
+    <Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+  </Events>
+  <ChildItems>
+    <Pages name="ГруппаСтраницы" id="1">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Страницы</v8:content>
+        </v8:item>
+      </Title>
+      <PagesRepresentation>None</PagesRepresentation>
+      <ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="2"/>
+      <ChildItems>
+        <Page name="СтраницаОсновная" id="3">
+          <Title>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Основная</v8:content>
+            </v8:item>
+          </Title>
+          <ExtendedTooltip name="СтраницаОсновнаяРасширеннаяПодсказка" id="4"/>
+          <ChildItems>
+            <InputField name="ТекстЗапроса" id="5">
+              <DataPath>ТекстЗапроса</DataPath>
+              <TitleLocation>Top</TitleLocation>
+              <AutoMaxWidth>false</AutoMaxWidth>
+              <AutoMaxHeight>false</AutoMaxHeight>
+              <HorizontalStretch>true</HorizontalStretch>
+              <VerticalStretch>false</VerticalStretch>
+              <MultiLine>true</MultiLine>
+              <ExtendedEdit>true</ExtendedEdit>
+              <ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="6"/>
+              <ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="7"/>
+              <Events>
+                <Event name="OnChange">ТекстЗапросаПриИзменении</Event>
+              </Events>
+            </InputField>
+            <Button name="ОтправитьЗапрос" id="8">
+              <Type>UsualButton</Type>
+              <CommandName>Form.Command.ОтправитьЗапрос</CommandName>
+              <ExtendedTooltip name="ОтправитьЗапросРасширеннаяПодсказка" id="9"/>
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Отправить запрос</v8:content>
+                </v8:item>
+              </Title>
+              <ToolTip>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Отправить запрос к ИИ</v8:content>
+                </v8:item>
+              </ToolTip>
+            </Button>
+            <LabelDecoration name="ДекорацияОтступ" id="10">
+              <Title formatted="false">
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content></v8:content>
+                </v8:item>
+              </Title>
+              <ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="11"/>
+              <ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="12"/>
+            </LabelDecoration>
+            <FormGroup name="ГруппаОтвет" id="13">
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Ответ ИИ-ассистента</v8:content>
+                </v8:item>
+              </Title>
+              <ToolTip>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Ответ ИИ-ассистента</v8:content>
+                </v8:item>
+              </ToolTip>
+              <Group>Vertical</Group>
+              <Behavior>Usual</Behavior>
+              <ExtendedTooltip name="ГруппаОтветРасширеннаяПодсказка" id="14"/>
+              <ChildItems>
+                <FormattedDocumentField name="ОтветАссистента" id="15">
+                  <DataPath>ОтветАссистента</DataPath>
+                  <TitleLocation>None</TitleLocation>
+                  <AutoMaxWidth>false</AutoMaxWidth>
+                  <AutoMaxHeight>false</AutoMaxHeight>
+                  <HorizontalStretch>true</HorizontalStretch>
+                  <VerticalStretch>true</VerticalStretch>
+                  <ReadOnly>true</ReadOnly>
+                  <ContextMenu name="ОтветАссистентаКонтекстноеМеню" id="16"/>
+                  <ExtendedTooltip name="ОтветАссистентаРасширеннаяПодсказка" id="17"/>
+                </FormattedDocumentField>
+              </ChildItems>
+            </FormGroup>
+          </ChildItems>
+        </Page>
+        <Page name="СтраницаНастройки" id="19">
+          <Title>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Настройки</v8:content>
+            </v8:item>
+          </Title>
+          <ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="20"/>
+          <ChildItems>
+            <InputField name="КлючAPI" id="21">
+              <DataPath>КлючAPI</DataPath>
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Ключ API</v8:content>
+                </v8:item>
+              </Title>
+              <ToolTip>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Ключ API для доступа к сервисам ИИ</v8:content>
+                </v8:item>
+              </ToolTip>
+              <AutoMaxWidth>false</AutoMaxWidth>
+              <AutoMaxHeight>false</AutoMaxHeight>
+              <HorizontalStretch>true</HorizontalStretch>
+              <PasswordMode>true</PasswordMode>
+              <ContextMenu name="КлючAPIКонтекстноеМеню" id="22"/>
+              <ExtendedTooltip name="КлючAPIРасширеннаяПодсказка" id="23"/>
+              <Events>
+                <Event name="OnChange">КлючAPIПриИзменении</Event>
+              </Events>
+            </InputField>
+            <InputField name="МодельИИ" id="24">
+              <DataPath>МодельИИ</DataPath>
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Модель ИИ</v8:content>
+                </v8:item>
+              </Title>
+              <ToolTip>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Модель ИИ для использования</v8:content>
+                </v8:item>
+              </ToolTip>
+              <ListChoiceMode>true</ListChoiceMode>
+              <ChoiceList>
+                <Value xsi:type="xs:string">gpt-4</Value>
+                <Presentation>
+                  <v8:item>
+                    <v8:lang>ru</v8:lang>
+                    <v8:content>GPT-4</v8:content>
+                  </v8:item>
+                </Presentation>
+              </ChoiceList>
+              <ChoiceList>
+                <Value xsi:type="xs:string">gpt-3.5-turbo</Value>
+                <Presentation>
+                  <v8:item>
+                    <v8:lang>ru</v8:lang>
+                    <v8:content>GPT-3.5 Turbo</v8:content>
+                  </v8:item>
+                </Presentation>
+              </ChoiceList>
+              <ContextMenu name="МодельИИКонтекстноеМеню" id="25"/>
+              <ExtendedTooltip name="МодельИИРасширеннаяПодсказка" id="26"/>
+              <Events>
+                <Event name="OnChange">МодельИИПриИзменении</Event>
+              </Events>
+            </InputField>
+            <Button name="СохранитьНастройки" id="27">
+              <Type>UsualButton</Type>
+              <CommandName>Form.Command.СохранитьНастройки</CommandName>
+              <ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="28"/>
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Сохранить настройки</v8:content>
+                </v8:item>
+              </Title>
+              <ToolTip>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Сохранить настройки для ИИ-ассистента</v8:content>
+                </v8:item>
+              </ToolTip>
+            </Button>
+            <Button name="ВернутьсяКАссистенту" id="29">
+              <Type>UsualButton</Type>
+              <CommandName>Form.Command.ВернутьсяКАссистенту</CommandName>
+              <ExtendedTooltip name="ВернутьсяКАссистентуРасширеннаяПодсказка" id="30"/>
+              <Title>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Вернуться к ассистенту</v8:content>
+                </v8:item>
+              </Title>
+              <ToolTip>
+                <v8:item>
+                  <v8:lang>ru</v8:lang>
+                  <v8:content>Вернуться к ИИ-ассистенту</v8:content>
+                </v8:item>
+              </ToolTip>
+            </Button>
+          </ChildItems>
+        </Page>
+      </ChildItems>
+    </Pages>
+  </ChildItems>
+  <Attributes>
+    <Attribute name="Объект" id="1">
+      <Type>
+        <v8:Type>cfg:FormObject</v8:Type>
+      </Type>
+      <Visible>false</Visible>
+      <MainAttribute>true</MainAttribute>
+    </Attribute>
+    <Attribute name="ТекстЗапроса" id="2">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Введите ваш вопрос...</v8:content>
+        </v8:item>
+      </Title>
+      <Type>
+        <v8:Type>xs:string</v8:Type>
+        <v8:StringQualifiers>
+          <v8:Length>0</v8:Length>
+          <v8:AllowedLength>Variable</v8:AllowedLength>
+        </v8:StringQualifiers>
+      </Type>
+      <Visible>true</Visible>
+    </Attribute>
+    <Attribute name="ОтветАссистента" id="3">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Ответ ассистента</v8:content>
+        </v8:item>
+      </Title>
+      <Type>
+        <v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/core">d5p1:FormattedDocument</v8:Type>
+      </Type>
+      <Visible>true</Visible>
+    </Attribute>
+    <Attribute name="КлючAPI" id="4">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Ключ API</v8:content>
+        </v8:item>
+      </Title>
+      <Type>
+        <v8:Type>xs:string</v8:Type>
+        <v8:StringQualifiers>
+          <v8:Length>100</v8:Length>
+          <v8:AllowedLength>Variable</v8:AllowedLength>
+        </v8:StringQualifiers>
+      </Type>
+      <Visible>true</Visible>
+    </Attribute>
+    <Attribute name="МодельИИ" id="5">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Модель ИИ</v8:content>
+        </v8:item>
+      </Title>
+      <Type>
+        <v8:Type>xs:string</v8:Type>
+        <v8:StringQualifiers>
+          <v8:Length>50</v8:Length>
+          <v8:AllowedLength>Variable</v8:AllowedLength>
+        </v8:StringQualifiers>
+      </Type>
+      <Visible>true</Visible>
+    </Attribute>
+  </Attributes>
+  <Commands>
+    <Command name="ОтправитьЗапрос" id="1">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Отправить запрос</v8:content>
+        </v8:item>
+      </Title>
+      <ToolTip>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Отправить запрос к ИИ</v8:content>
+        </v8:item>
+      </ToolTip>
+      <Action>ОтправитьЗапрос</Action>
+    </Command>
+    <Command name="ОткрытьНастройки" id="2">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Настройки</v8:content>
+        </v8:item>
+      </Title>
+      <ToolTip>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Открыть настройки ИИ-ассистента</v8:content>
+        </v8:item>
+      </ToolTip>
+      <Picture>
+        <xr:Ref>StdPicture.Properties</xr:Ref>
+        <xr:LoadTransparent>true</xr:LoadTransparent>
+      </Picture>
+      <Action>ОткрытьНастройки</Action>
+    </Command>
+    <Command name="СохранитьНастройки" id="3">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сохранить настройки</v8:content>
+        </v8:item>
+      </Title>
+      <ToolTip>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сохранить настройки ИИ-ассистента</v8:content>
+        </v8:item>
+      </ToolTip>
+      <Action>СохранитьНастройки</Action>
+    </Command>
+    <Command name="ВернутьсяКАссистенту" id="4">
+      <Title>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Вернуться к ассистенту</v8:content>
+        </v8:item>
+      </Title>
+      <ToolTip>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Вернуться к ИИ-ассистенту</v8:content>
+        </v8:item>
+      </ToolTip>
+      <Action>ВернутьсяКАссистенту</Action>
+    </Command>
+  </Commands>
+</Form> 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionTemplate>
+	<Name>AI_Assistant</Name>
+	<Description>Расширение ИИ-ассистент для 1С:ERP</Description>
+	<Version>1.0.0</Version>
+	<Author>Автор расширения</Author>
+</ExtensionTemplate> 
